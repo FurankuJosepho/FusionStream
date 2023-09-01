@@ -1,0 +1,448 @@
+@font-face {
+    font-family: 'Aharoni';
+    src: url(ahronbd.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #34374C;
+    margin: 0;
+    overflow-x: hidden;
+}
+.navbar {
+    background-color: #2C2E3E;
+    z-index: 10;
+}
+.pangalan {
+    font-family: 'Aharoni';
+    font-size: xx-large;
+    padding: 0;
+    letter-spacing: 3px;
+}
+.pangalan2 {
+    font-family: 'Aharoni';
+    font-size: 85px;
+    padding: 0;
+    letter-spacing: 5px;
+}
+.pangalan3 {
+    font-family: 'Aharoni';
+    font-size: xx-large;
+    padding: 0;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+.pangalan4 {
+    font-family: 'Aharoni';
+    font-size: xx-large;
+    padding: 0;
+    letter-spacing: 5px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+#HeroPage {
+    height: 752.9px;
+}
+#movies {
+    width: 100%;
+    height: 752.9px;
+}
+.BG-image .image {
+    object-fit: cover!important;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: 0;
+}
+.image::after {
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+}
+p {
+    font-family: Calibri; 
+    font-size: 20px;
+    font-weight:bold;
+    margin-left: 54px;
+    margin-right: 70px;
+}
+.navbar-nav {
+    font-family: 'Aharoni';
+}
+.col-md-9 {
+    margin-top: 250px;
+    z-index: 1;
+}
+.btn-danger {
+    font-weight: bold;
+}
+
+/* List of Vids Section */
+.section2 {
+    height: 1987.9px;
+    padding-top: 100px;
+}
+.col-lg-2 {
+    margin: 10px;
+}
+.card {
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+.card-image {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+h3 {
+    font-family: 'Aharoni';
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #d2d2d4;
+}
+.card-body {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    background: #2c2e3e81;
+    backdrop-filter: blur(3px);
+    border-radius: 20px;
+    text-align: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    transition: 0.6s ease-in-;
+}
+.card-btn {
+    margin-right: 28px;
+}
+.card:hover .card-body {
+    right: 0;
+}
+.card:hover{
+    transform: scale(1.4);
+    z-index: 100;
+}
+
+/* Series Carousel */
+#home {
+    margin-left: 0%;
+    width: 100%;
+    height: 751px;
+}
+.slide-container {
+    position: absolute;
+    left: 0;
+    max-height: 100px;
+    width: 99.9%;
+}
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 30px;
+}
+.slider .slide {
+    /* grow, shrink, basis */
+    flex: 80 0 100%;
+    padding-top: 50px;
+    scroll-snap-align: start;
+    object-fit: cover!important;
+}
+.slide {
+    width: 90%;
+    height: 750.9px;
+}
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 11;
+}
+.slider-btn {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    top: 40rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+}
+.slider-nav a {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #EE2B47;
+    opacity: 0.75;
+    /* target, animation type, how long */
+    transition: opacity ease-in 0.2s;
+}
+.slider-nav a:hover {
+    opacity: 1;
+
+}
+.slider::-webkit-scrollbar {
+    display: none;
+}
+.bi {
+    color: #EE2B47;
+    margin-left: 40px;
+    padding-bottom: 40px;
+}
+/* Series list */
+.Series-list {
+    margin-left: 10px;
+    height: 100%;
+}
+.Media-Scroller,
+.Media-Group {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 30px;
+}
+.Media-Scroller {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-align: start;
+}
+.Media-Group {
+    gap: 20px;
+}
+.Nex-Prev {
+    margin: 100px 0;
+}
+.Prev {
+    margin-right: 20px;
+}
+.card2 {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+.card-image2 {
+    border-radius: 20px;
+    width: 80%;
+    height: 80%;
+}
+h3 {
+    font-family: 'Aharoni';
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: #d2d2d4;
+}
+.anime {
+    font-family: 'Aharoni';
+    margin-left: 140px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #d2d2d4;
+    padding-top: 100px;
+}
+.korean {
+    font-family: 'Aharoni';
+    margin-left: 140px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #d2d2d4;
+    padding-top: 10px;
+}
+.card-body2 {
+    margin-right: 30px;
+    position: relative;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    transition: 0.6s ease-in-;
+}
+.card-btn2 {
+    margin-right: 45px;
+}
+.card2:hover{
+    transform: scale(1.4);
+    z-index: 100;
+}
+
+/* Solo Leveling */
+.main-lev {
+    margin-top: 63px;
+}
+.pangalan5 { 
+    font-family: 'Aharoni';
+    font-size: xx-large;
+    padding: 0;
+    letter-spacing: 3px;
+    color: #d2d2d4;
+    margin-left: 20px;
+    padding-top: 15px;
+}
+.pangalan6 { 
+    font-family: 'Aharoni';
+    font-size: xx-large;
+    padding: 0;
+    letter-spacing: 3px;
+    color: #d2d2d4;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.read {
+    margin-left: 85px;
+    margin-top: 10px;
+}
+.solo {
+    margin-top: 30px;
+}
+.sololev {
+    border-radius: 40px;
+    margin:0 30px;
+    box-shadow: 2px 2px 40px 11px rgba(0, 0, 0, 0.342) ;
+}
+
+/* Second Column */
+
+.genre {
+    margin-left: 20px;
+}
+.SoloLevPrev {
+    margin-top: 10px;
+    color: #d2d2d4;
+    margin-bottom: 0;
+    font-weight: lighter;
+}
+.readmore {
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.lev {
+    height: 100%;
+}
+.chapters {
+    margin-top: 30px;
+    background: #2C2E3E;
+}
+.Num-Chap {
+    text-decoration: none;
+    color: #d2d2d4;
+    padding: 30px;
+    margin: 20px 0;
+}
+.chapter {
+    display: flex;
+}
+.chapter1 {
+    margin: 10px 0;
+    width: 100px;
+    height: 100px;
+}
+.chapter-border {
+    border: #d2d2d4 solid 2px;
+    border-radius: 20px;
+    background: #2C2E3E;
+}
+
+
+/* Black Clover */
+.BlackClover {
+    width: 300px;
+    border-radius: 40px;
+    margin:0 30px;
+    box-shadow: 2px 2px 40px 11px rgba(0, 0, 0, 0.342) ;
+}
+.pangalan7 { 
+    font-family: 'Aharoni';
+    font-size: xx-large;
+    padding: 0;
+    letter-spacing: 3px;
+    color: #d2d2d4;
+    margin-left: 65px;
+    margin-top: 30px;
+}
+.Watch {
+    margin-left: 112px;
+    margin-top: 10px;
+}
+video {
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+}
+.Video-Movie-Container {
+    border-radius: 20px;
+}
+/* Responsiveness */
+@media (max-width: 800px) {
+    .pangalan {
+        font-family: 'Aharoni';
+        font-size: x-large;
+        padding: 0;
+        letter-spacing: 2px;
+    }
+    .pangalan2 {
+        font-family: 'Aharoni';
+        font-size: 30px;
+        padding: 0;
+        letter-spacing: 2px;
+    }
+    p {
+        font-family: Calibri; 
+        font-size: 14px;
+        font-weight:bold;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .col-md-9 {
+        margin-top:252px;
+    }
+    img {
+        width: 100%;
+        height: 598.9px;
+    }
+    #HeroPage {
+        height: 602.9px;
+    }
+    .section2 {
+        overflow: hidden;
+        padding-top: 69px;
+        height: 100%;
+    }
+    .card {
+        margin-left: 37px;
+        width: 200px;
+        height: 300px;
+        transition: transform 0.2s;
+    }
+    .card:hover{
+        transform: scale(1.1);
+        z-index: 100;
+    }
+    .Media-Scroller {
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        scroll-snap-align: start;
+    }
+}
